@@ -17,9 +17,9 @@ export default function Home() {
         {/* Text */}
         <div className="w-2/3">
           <h1 className="text-4xl font-semibold text-white mb-2">Hi There!</h1>
-          <h1 className="text-4xl font-semibold text-white mb-4">I'm Dimitri Jacquemont</h1>
+          <h1 className="text-4xl font-semibold text-white mb-4">I'm <strong>Dimitri Jacquemont</strong></h1>
           <p className="text-lg text-gray-300 mt-6">
-            Passionate about Software, Robotics, and Engineering, I am driven by innovation and hands-on problem-solving.
+            Passionate about <strong>Software, Robotics, and Engineering</strong>, I am driven by <strong>innovation</strong> and <strong>hands-on problem-solving</strong>.
           </p>
         </div>
       </div>
@@ -30,13 +30,13 @@ export default function Home() {
         <div className="w-3/4 bg-gray-800 rounded-xl shadow-lg p-6">
           <h2 className="text-2xl font-semibold text-white mb-4">A Little More About Me</h2>
           <p className="text-base text-gray-300 mb-3">
-            I specialize in software development for robotics, with a strong passion for systems and hands-on problem-solving. My academic journey at <a href="https://www.epfl.ch/en/" className="text-blue-400 hover:underline">EPFL</a>, <a href="https://www.dtu.dk/english/" className="text-blue-400 hover:underline">DTU</a> and <a href="https://www.berkeley.edu/" className="text-blue-400 hover:underline">UC Berkeley</a> led me to focus on robotics, where I've worked on various exciting projects.
+            I specialize in <strong>software development for robotics</strong>, with a strong passion for <strong>systems</strong> and <strong>hands-on problem-solving</strong>. My academic journey at <a href="https://www.epfl.ch/en/" className="text-blue-400 hover:underline">EPFL</a>, <a href="https://www.dtu.dk/english/" className="text-blue-400 hover:underline">DTU</a> and <a href="https://www.berkeley.edu/" className="text-blue-400 hover:underline">UC Berkeley</a> led me to focus on robotics, where I've worked on various exciting projects.
           </p>
           <p className="text-base text-gray-300 mb-3">
             I had the opportunity to intern at <a href="https://www.tethys-robotics.ch/" className="text-blue-400 hover:underline">Tethys Robotics</a>, designing and programming an ESC for Unmanned Underwater Vehicles, and also at <a href="https://www.sevensense.ai/" className="text-blue-400 hover:underline">Sevensense</a> now part of <a href="https://global.abb/group/en" className="text-blue-400 hover:underline">ABB</a>, working on state-of-the-art navigation and localization solutions for autonomous mobile robots.
           </p>
           <p className="text-base text-gray-300 mb-3">
-            Driven by a passion for robotics, I'm eager to continue advancing in this exciting field.
+            Driven by a <strong>passion for robotics</strong>, I'm eager to continue advancing in this exciting field.
           </p>
         </div>
 
