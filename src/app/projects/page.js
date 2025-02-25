@@ -3,8 +3,8 @@ export default function Projects() {
   const projectsList = [
     {
       id: '1',
-      title: 'BlockBuster',
-      description: 'As part of a three-student team, we successfully designed, constructed, and programmed an autonomous robot for the <a href="https://robot-competition.epfl.ch/" class="text-blue-400 hover\:underline">EPFL Robot Competition 2024</a>, ultimately securing a first-place win.',
+      title: 'BlockBuster 🥇',
+      description: 'As part of a three-student team, we successfully designed, constructed, and programmed an autonomous robot for the <a href="https://robot-competition.epfl.ch/" class="text-blue-400 hover:text-blue-300 transition-colors underline decoration-dotted underline-offset-2">EPFL Robot Competition 2024</a>, ultimately securing a first-place win.',
       technologies: ['Python', 'ROS2', 'Docker'],
       githubUrl: 'https://github.com/DJacquemont/BlockBuster/tree/main',
       liveUrl: 'https://www.youtube.com/watch?v=ejofCqsJ4cE&ab_channel=DroneBikeTV',
@@ -12,7 +12,7 @@ export default function Projects() {
     },
     {
       id: '2',
-      title: 'Camera and LCD Controllers for an FPGA',
+      title: 'Camera and LCD Controllers for an FPGA 📷',
       description: 'Design and implementation of LCD and Camera controllers: the LCD controller displays video data on a screen, while the Camera controller captures and transmits the data for visualization.',
       technologies: ['FPGA', 'VHDL', 'DEO-Nano-SoC'],
       githubUrl: 'https://github.com/DJacquemont/Camera-and-LCD-Controllers-for-an-FPGA',
@@ -21,30 +21,30 @@ export default function Projects() {
     {
       id: '3',
       title: 'Point Cloud Segmentation of Infrastructural Steel Elements',
-      description: 'Developed a real-time ROS segmentation pipeline using a ToF camera on a Micro Aerial Vehicle (MAV) to capture and process 3D point-cloud data for extracting 3D structures. This project was conducted at the <a href="https://www.epfl.ch/labs/disal/" class="text-blue-400 hover\:underline">DISAL Lab</a> at EPFL',
+      description: 'Developed a real-time ROS segmentation pipeline using a ToF camera on a Micro Aerial Vehicle (MAV) to capture and process 3D point-cloud data for extracting 3D structures. This project was conducted at the <a href="https://www.epfl.ch/labs/disal/" class="text-blue-400 hover:text-blue-300 transition-colors underline decoration-dotted underline-offset-2">DISAL Lab</a> at EPFL',
       technologies: ['C++', 'ROS', 'Point-Cloud'],
       githubUrl: 'https://github.com/DJacquemont/pointcloud_segmentation',
       imageUrl: '/images/pcseg.gif'
     },
     {
       id: '4',
-      title: 'RoboCup@Home',
-      description: 'Part of a six-student team developing software for the <a href="https://make.epfl.ch/projects/12/make-robocup" class="text-blue-400 hover\:underline">RoboCup@Home competition project at EPFL</a>, led by the <a href="https://www.epfl.ch/labs/create/" class="text-blue-400 hover\:underline">CREATE Lab</a>.',
+      title: 'RoboCup@Home 🦿',
+      description: 'Part of a six-student team developing software for the <a href="https://make.epfl.ch/projects/12/make-robocup" class="text-blue-400 hover:text-blue-300 transition-colors underline decoration-dotted underline-offset-2">RoboCup@Home competition project at EPFL</a>, led by the <a href="https://www.epfl.ch/labs/create/" class="text-blue-400 hover:text-blue-300 transition-colors underline decoration-dotted underline-offset-2">CREATE Lab</a>.',
       technologies: ['Python', 'ROS2', 'Docker'],
       githubUrl: 'https://gitlab.epfl.ch/create-lab/robocup_at_home/epfl-robocup',
       imageUrl: '/images/robocup.jpg'
     },
     {
       id: '5',
-      title: 'Pedestrian Intention Prediction',
-      description: 'Developed a deep learning model using <a href="https://github.com/Walter0807/MotionBERTMotionBert" class="text-blue-400 hover\:underline">MotionBERT</a> to predict pedestrian intentions in videos, trained on the <a href="https://data.nvision2.eecs.yorku.ca/JAAD_dataset/" class="text-blue-400 hover\:underline">JAAD dataset</a>.',
+      title: 'Pedestrian Intention Prediction 👁️',
+      description: 'Developed a deep learning model using <a href="https://github.com/Walter0807/MotionBERTMotionBert" class="text-blue-400 hover:text-blue-300 transition-colors underline decoration-dotted underline-offset-2">MotionBERT</a> to predict pedestrian intentions in videos, trained on the <a href="https://data.nvision2.eecs.yorku.ca/JAAD_dataset/" class="text-blue-400 hover:text-blue-300 transition-colors underline decoration-dotted underline-offset-2">JAAD dataset</a>.',
       technologies: ['Python', 'Pytorch', 'BERT'],
       githubUrl: 'https://github.com/DJacquemont/pedestrian-intention-prediction',
       imageUrl: '/images/pedintpred.gif'
     },
     {
       id: '6',
-      title: 'Hot Wheels',
+      title: 'Hot Wheels 🚗',
       description: 'Development software for the Thymio robot to navigate autonomously through obstacles by localizing itself, optimizing its path using Dijkstra\'s algorithm, and avoiding unexpected objects.',
       technologies: ['Python', 'Thymio'],
       githubUrl: 'https://github.com/DJacquemont/hot_wheels/tree/main',
@@ -52,7 +52,7 @@ export default function Projects() {
     },
     {
       id: '7',
-      title: 'Temperature Controller',
+      title: 'Temperature Controller 🌡️',
       description: 'Design and programming of a temperature monitoring system that controls cooling by opening valves for airflow. It triggers an alarm if the temperature goes above a set limit.',
       technologies: ['ASM', 'AVR STK300'],
       githubUrl: 'https://github.com/DJacquemont/temperature-controller?tab=readme-ov-file',
@@ -60,7 +60,7 @@ export default function Projects() {
     },
     {
       id: '8',
-      title: 'Logic Watch',
+      title: 'Logic Watch ⌚',
       description: 'Development of a device that can display the time, time zones, sound the alarm, and have a stopwatch mode as well as a timer mode',
       technologies: ['DE10-Lite'],
       githubUrl: 'https://github.com/DJacquemont/logic-watch/tree/main?tab=readme-ov-file',
@@ -68,7 +68,7 @@ export default function Projects() {
     },
     {
       id: '9',
-      title: 'Archipelago',
+      title: 'Archipelago 🏝️',
       description: 'Developed a tool to assess the efficiency of a floating city design, featuring circular islands and bridges.',
       technologies: ['C++', 'gtkmm'],
       githubUrl: 'https://github.com/DJacquemont/arquipelago',
