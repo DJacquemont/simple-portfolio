@@ -33,14 +33,10 @@ export default function HomePage() {
         <div className="w-full lg:w-3/4 bg-gray-800/80 backdrop-blur-sm rounded-xl shadow-lg p-6 transition-all duration-300 hover:shadow-xl">
           <h2 className="text-2xl font-semibold text-white mb-4 font-display pb-2">A Little More About Me 🤖</h2>
           <p className="text-base text-gray-300 leading-relaxed">
-            I specialize in <span className="text-blue-300 font-medium">software development for robotics</span>, with a strong passion for <span className="text-blue-300 font-medium">systems</span> and <span className="text-blue-300 font-medium">hands-on problem-solving</span>. My academic journey at 
-            <ExternalLink href="https://www.epfl.ch/en/" label="EPFL" />, 
-            <ExternalLink href="https://www.dtu.dk/english/" label="DTU" />, and 
-            <ExternalLink href="https://www.berkeley.edu/" label="UC Berkeley" /> led me to focus on robotics, where I've worked on various exciting projects.
+            I specialize in <span className="text-blue-300 font-medium">software development for robotics</span>, with a strong passion for <span className="text-blue-300 font-medium">systems</span> and <span className="text-blue-300 font-medium">hands-on problem-solving</span>. My academic journey at <ExternalLink href="https://www.epfl.ch/en/" label="EPFL" />, <ExternalLink href="https://www.dtu.dk/english/" label="DTU" />, and <ExternalLink href="https://www.berkeley.edu/" label="UC Berkeley" /> led me to focus on robotics, where I've worked on various exciting projects.
           </p>
           <p className="text-base text-gray-300 mt-4 leading-relaxed">
-            I interned at <ExternalLink href="https://www.tethys-robotics.ch/" label="Tethys Robotics" />, designing and programming an ESC for Unmanned Underwater Vehicles, and at 
-            <ExternalLink href="https://www.sevensense.ai/" label="Sevensense" />, now part of <ExternalLink href="https://global.abb/group/en" label="ABB" />, working on state-of-the-art navigation and localization solutions for autonomous mobile robots.
+            I interned at <ExternalLink href="https://www.tethys-robotics.ch/" label="Tethys Robotics" />, designing and programming an ESC for Unmanned Underwater Vehicles, and at <ExternalLink href="https://www.sevensense.ai/" label="Sevensense" />, now part of <ExternalLink href="https://global.abb/group/en" label="ABB" />, working on state-of-the-art navigation and localization solutions for autonomous mobile robots.
           </p>
           <p className="text-base text-gray-300 mt-4 leading-relaxed">
             Driven by a <span className="text-blue-300 font-medium">passion for robotics</span>, I'm eager to continue advancing in this exciting field.
