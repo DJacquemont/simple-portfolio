@@ -3,6 +3,7 @@ export default function Projects() {
     {
       id: '1',
       title: 'BlockBuster 🥇',
+      year: '2024',
       description: 'As part of a three-student team, we successfully designed, constructed, and programmed an autonomous robot for the <a href="https://robot-competition.epfl.ch/" class="text-blue-400 hover:text-blue-300 transition-colors underline decoration-dotted underline-offset-2">EPFL Robot Competition 2024</a>, ultimately securing a first-place win.',
       technologies: ['Python', 'ROS2', 'Docker'],
       githubUrl: 'https://github.com/DJacquemont/BlockBuster/tree/main',
@@ -12,6 +13,7 @@ export default function Projects() {
     {
       id: '2',
       title: 'Camera and LCD Controllers for an FPGA 📷',
+      year: '2023',
       description: 'Design and implementation of LCD and Camera controllers: the LCD controller displays video data on a screen, while the Camera controller captures and transmits the data for visualization.',
       technologies: ['FPGA', 'VHDL', 'DEO-Nano-SoC'],
       githubUrl: 'https://github.com/DJacquemont/Camera-and-LCD-Controllers-for-an-FPGA',
@@ -20,6 +22,7 @@ export default function Projects() {
     {
       id: '3',
       title: 'Point Cloud Segmentation of Infrastructural Steel Elements',
+      year: '2023',
       description: 'Developed a real-time ROS segmentation pipeline using a ToF camera on a Micro Aerial Vehicle (MAV) to capture and process 3D point-cloud data for extracting 3D structures. This project was conducted at the <a href="https://www.epfl.ch/labs/disal/" class="text-blue-400 hover:text-blue-300 transition-colors underline decoration-dotted underline-offset-2">DISAL Lab</a> at EPFL',
       technologies: ['C++', 'ROS', 'Point-Cloud'],
       githubUrl: 'https://github.com/DJacquemont/pointcloud_segmentation',
@@ -27,47 +30,61 @@ export default function Projects() {
     },
     {
       id: '4',
+      title: 'Useless Box 🎁',
+      year: '2023',
+      description: 'Designed and built a Useless Box as a personal project, a playful machine that turns itself off when turned on and displays different "emotions" each time.',
+      technologies: ['Electronics', 'Arduino', '3D Printer'],
+      imageUrl: '/images/uselessbox.gif'
+    },
+    {
+      id: '5',
       title: 'RoboCup@Home 🦿',
+      year: '2023',
       description: 'Part of a six-student team developing software for the <a href="https://make.epfl.ch/projects/12/make-robocup" class="text-blue-400 hover:text-blue-300 transition-colors underline decoration-dotted underline-offset-2">RoboCup@Home competition project at EPFL</a>, led by the <a href="https://www.epfl.ch/labs/create/" class="text-blue-400 hover:text-blue-300 transition-colors underline decoration-dotted underline-offset-2">CREATE Lab</a>.',
       technologies: ['Python', 'ROS2', 'Docker'],
       githubUrl: 'https://gitlab.epfl.ch/create-lab/robocup_at_home/epfl-robocup',
       imageUrl: '/images/robocup.jpg'
     },
     {
-      id: '5',
+      id: '6',
       title: 'Pedestrian Intention Prediction 👁️',
+      year: '2023',
       description: 'Developed a deep learning model using <a href="https://github.com/Walter0807/MotionBERTMotionBert" class="text-blue-400 hover:text-blue-300 transition-colors underline decoration-dotted underline-offset-2">MotionBERT</a> to predict pedestrian intentions in videos, trained on the <a href="https://data.nvision2.eecs.yorku.ca/JAAD_dataset/" class="text-blue-400 hover:text-blue-300 transition-colors underline decoration-dotted underline-offset-2">JAAD dataset</a>.',
       technologies: ['Python', 'Pytorch', 'BERT'],
       githubUrl: 'https://github.com/DJacquemont/pedestrian-intention-prediction',
       imageUrl: '/images/pedintpred.gif'
     },
     {
-      id: '6',
+      id: '7',
       title: 'Hot Wheels 🚗',
+      year: '2022',
       description: 'Development software for the Thymio robot to navigate autonomously through obstacles by localizing itself, optimizing its path using Dijkstra\'s algorithm, and avoiding unexpected objects.',
       technologies: ['Python', 'Thymio'],
       githubUrl: 'https://github.com/DJacquemont/hot_wheels/tree/main',
       imageUrl: '/images/hotwheels.png'
     },
     {
-      id: '7',
+      id: '8',
       title: 'Temperature Controller 🌡️',
+      year: '2021',
       description: 'Design and programming of a temperature monitoring system that controls cooling by opening valves for airflow. It triggers an alarm if the temperature goes above a set limit.',
       technologies: ['ASM', 'AVR STK300'],
       githubUrl: 'https://github.com/DJacquemont/temperature-controller?tab=readme-ov-file',
       imageUrl: '/images/tempcont.png'
     },
     {
-      id: '8',
+      id: '9',
       title: 'Logic Watch ⌚',
+      year: '2020',
       description: 'Development of a device that can display the time, time zones, sound the alarm, and have a stopwatch mode as well as a timer mode',
       technologies: ['DE10-Lite'],
       githubUrl: 'https://github.com/DJacquemont/logic-watch/tree/main?tab=readme-ov-file',
       imageUrl: '/images/logicwatch.png'
     },
     {
-      id: '9',
+      id: '10',
       title: 'Archipelago 🏝️',
+      year: '2020',
       description: 'Developed a tool to assess the efficiency of a floating city design, featuring circular islands and bridges.',
       technologies: ['C++', 'gtkmm'],
       githubUrl: 'https://github.com/DJacquemont/arquipelago',
@@ -98,7 +115,10 @@ export default function Projects() {
               </div>
               
               <div className="p-5 flex flex-col flex-grow">
-                <h2 className="text-xl font-semibold text-white mb-2">{project.title}</h2>
+                <div className="flex justify-between items-start mb-2">
+                  <h2 className="text-xl font-semibold text-white">{project.title}</h2>
+                  <span className="text-gray-400 text-sm">{project.year}</span>
+                </div>
                 
                 <p 
                   className="text-gray-300 mb-4 text-sm flex-grow"
