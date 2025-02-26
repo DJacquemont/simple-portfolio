@@ -49,7 +49,7 @@ export default function Projects() {
       id: '6',
       title: 'Pedestrian Intention Prediction 👁️',
       year: '2023',
-      description: 'Developed a deep learning model using <a href="https://github.com/Walter0807/MotionBERTMotionBert" class="text-blue-400 hover:text-blue-300 transition-colors underline decoration-dotted underline-offset-2">MotionBERT</a> to predict pedestrian intentions in videos, trained on the <a href="https://data.nvision2.eecs.yorku.ca/JAAD_dataset/" class="text-blue-400 hover:text-blue-300 transition-colors underline decoration-dotted underline-offset-2">JAAD dataset</a>.',
+      description: 'Developed a deep learning model based on <a href="https://github.com/Walter0807/MotionBERT" class="text-blue-400 hover:text-blue-300 transition-colors underline decoration-dotted underline-offset-2">MotionBERT</a> to predict pedestrian intentions in videos, trained on the <a href="https://data.nvision2.eecs.yorku.ca/JAAD_dataset/" class="text-blue-400 hover:text-blue-300 transition-colors underline decoration-dotted underline-offset-2">JAAD dataset</a>.',
       technologies: ['Python', 'Pytorch', 'BERT'],
       githubUrl: 'https://github.com/DJacquemont/pedestrian-intention-prediction',
       imageUrl: '/images/pedintpred.gif'
