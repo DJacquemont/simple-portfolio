@@ -1,4 +1,3 @@
-// src/app/layout.js
 import './globals.css'
 import Navigation from './components/Navigation'
 
