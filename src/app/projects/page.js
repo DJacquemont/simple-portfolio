@@ -1,4 +1,3 @@
-// src/app/projects/page.js
 export default function Projects() {
   const projectsList = [
     {
@@ -7,7 +6,7 @@ export default function Projects() {
       description: 'As part of a three-student team, we successfully designed, constructed, and programmed an autonomous robot for the <a href="https://robot-competition.epfl.ch/" class="text-blue-400 hover:text-blue-300 transition-colors underline decoration-dotted underline-offset-2">EPFL Robot Competition 2024</a>, ultimately securing a first-place win.',
       technologies: ['Python', 'ROS2', 'Docker'],
       githubUrl: 'https://github.com/DJacquemont/BlockBuster/tree/main',
-      liveUrl: 'https://www.youtube.com/watch?v=ejofCqsJ4cE&ab_channel=DroneBikeTV',
+      demoUrl: 'https://www.youtube.com/watch?v=ejofCqsJ4cE&ab_channel=DroneBikeTV',
       imageUrl: '/images/blockbuster.gif'
     },
     {
@@ -77,7 +76,6 @@ export default function Projects() {
   ];
 
   return (
-    // Override the overflow-hidden from the parent layout explicitly
     <div className="absolute inset-0 bg-gray-900 text-left px-6 pt-6 overflow-y-auto" style={{ top: '4rem' }}>
       <div className="max-w-5xl mx-auto pb-12">
         <h1 className="text-4xl font-semibold text-white mb-6">Projects</h1>
@@ -87,7 +85,6 @@ export default function Projects() {
               key={project.id}
               className="bg-gray-800 rounded-xl shadow-lg overflow-hidden hover:translate-y-[-5px] transition duration-300 flex flex-col h-full"
             >
-              {/* Image/GIF container with fixed height */}
               <div className="h-48 w-full relative">
                 <div 
                   className="w-full h-full bg-cover bg-center" 
@@ -137,14 +134,14 @@ export default function Projects() {
                       GitHub
                     </a>
                   )}
-                  {project.liveUrl && (
+                  {project.demoUrl && (
                     <a 
-                      href={project.liveUrl}
+                      href={project.demoUrl}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="px-3 py-1 bg-blue-600 hover:bg-blue-700 rounded-lg text-xs font-medium transition"
                     >
-                      Live Demo
+                      Demo
                     </a>
                   )}
                 </div>

@@ -1,4 +1,3 @@
-// src/app/about/page.js
 import { ServerIcon, BookOpenIcon, BriefcaseIcon, BeakerIcon, CodeIcon, GlobeIcon } from 'lucide-react';
 
 export default function About() {
@@ -6,7 +5,7 @@ export default function About() {
     {
       institution: "University of California, Berkeley",
       degree: "Visiting Student Researcher",
-      period: "Spring 2025",
+      period: "Spring 2025 - Present",
       description: "Development of a drone-based system for photovoltaic arrays cleaning."
     },
     {
@@ -83,18 +82,16 @@ export default function About() {
       <div className="max-w-5xl mx-auto pb-12">
         <h1 className="text-4xl font-semibold text-white mb-6">About Me</h1>
 
-        {/* Personal Bio Section */}
         <div className="bg-gray-800 rounded-xl shadow-lg p-6 mb-8">
           <h2 className="text-2xl font-semibold text-white mb-4">Who I Am 🤖</h2>
           <p className="text-gray-300 mb-4">
-            I'm an EPFL Master's student in Robotics, deeply passionate about <span className="text-blue-300 font-medium">Software, Robotics, and Engineering</span>. My journey in robotics began during my undergraduate studies, where I discovered the perfect intersection of software, electronics, and mechanical systems.
+            I'm an EPFL Master's student in Robotics, deeply passionate about <span className="text-blue-300 font-medium">Software, Robotics, and Engineering</span>. 
           </p>
           <p className="text-gray-300 mb-4">
             As a dedicated DIY enthusiast, I'm driven by <span className="text-blue-300 font-medium">innovation and hands-on problem-solving</span>. I believe in the power of robotics to transform industries and improve human lives, which drives my commitment to advancing this technology through my work and research.
           </p>
         </div>
 
-        {/* Education Section */}
         <div className="bg-gray-800 rounded-xl shadow-lg p-6 mb-8">
           <div className="flex items-center mb-4">
             <BookOpenIcon className="h-6 w-6 text-blue-400 mr-2" />
@@ -112,11 +109,10 @@ export default function About() {
           </div>
         </div>
 
-        {/* Experience Section */}
         <div className="bg-gray-800 rounded-xl shadow-lg p-6 mb-8">
           <div className="flex items-center mb-4">
             <BriefcaseIcon className="h-6 w-6 text-blue-400 mr-2" />
-            <h2 className="text-2xl font-semibold text-white">Professional Experience</h2>
+            <h2 className="text-2xl font-semibold text-white">Experience</h2>
           </div>
           <div className="space-y-6">
             {experienceData.map((exp, index) => (
@@ -134,7 +130,6 @@ export default function About() {
           </div>
         </div>
 
-        {/* Skills Section */}
         <div className="bg-gray-800 rounded-xl shadow-lg p-6 mb-8">
           <div className="flex items-center mb-4">
             <ServerIcon className="h-6 w-6 text-blue-400 mr-2" />
@@ -177,7 +172,6 @@ export default function About() {
           </div>
         </div>
         
-        {/* Languages Section */}
         <div className="bg-gray-800 rounded-xl shadow-lg p-6 mb-8">
           <div className="flex items-center mb-4">
             <GlobeIcon className="h-6 w-6 text-blue-400 mr-2" />
@@ -193,7 +187,6 @@ export default function About() {
           </div>
         </div>
         
-        {/* Personal Projects */}
         <div className="bg-gray-800 rounded-xl shadow-lg p-6">
           <div className="flex items-center mb-4">
             <CodeIcon className="h-6 w-6 text-blue-400 mr-2" />
@@ -210,7 +203,7 @@ export default function About() {
             </div>
             <div className="bg-gray-700 p-4 rounded-lg">
               <h3 className="text-lg font-medium text-white mb-2">Fitness & Hiking 🏃‍♂️🏔️</h3>
-              <p className="text-gray-300">Staying active through regular exercise and exploring nature's trails</p>
+              <p className="text-gray-300">Staying active through regular exercise and exploring nature</p>
             </div>
           </div>
         </div>
