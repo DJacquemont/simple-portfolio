@@ -5,7 +5,7 @@ export default function Projects() {
       title: 'BlockBuster 🥇',
       year: '2024',
       description: 'As part of a three-student team, we successfully designed, constructed, and programmed an autonomous robot for the <a href="https://robot-competition.epfl.ch/" class="text-blue-400 hover:text-blue-300 transition-colors underline decoration-dotted underline-offset-2">EPFL Robot Competition 2024</a>, ultimately securing a first-place win.',
-      technologies: ['Python', 'ROS2', 'Docker'],
+      technologies: ['Python', 'C++', 'ROS2', 'Docker'],
       githubUrl: 'https://github.com/DJacquemont/BlockBuster/tree/main',
       demoUrl: 'https://www.youtube.com/watch?v=ejofCqsJ4cE&ab_channel=DroneBikeTV',
       imageUrl: '/images/blockbuster.gif'
@@ -41,7 +41,7 @@ export default function Projects() {
       title: 'RoboCup@Home 🦿',
       year: '2023',
       description: 'Part of a six-student team developing software for the <a href="https://make.epfl.ch/projects/12/make-robocup" class="text-blue-400 hover:text-blue-300 transition-colors underline decoration-dotted underline-offset-2">RoboCup@Home competition project at EPFL</a>, led by the <a href="https://www.epfl.ch/labs/create/" class="text-blue-400 hover:text-blue-300 transition-colors underline decoration-dotted underline-offset-2">CREATE Lab</a>.',
-      technologies: ['Python', 'ROS2', 'Docker'],
+      technologies: ['Python', 'ROS2', 'Docker', 'ESC'],
       githubUrl: 'https://gitlab.epfl.ch/create-lab/robocup_at_home/epfl-robocup',
       imageUrl: '/images/robocup.jpg'
     },
@@ -127,7 +127,7 @@ export default function Projects() {
                 
                 <div className="mb-4">
                   <div className="flex flex-wrap gap-2">
-                    {project.technologies.slice(0, 3).map((tech, index) => (
+                    {project.technologies.slice(0, 4).map((tech, index) => (
                       <span 
                         key={index}
                         className="px-2 py-1 bg-gray-700 rounded-full text-xs text-gray-200"
@@ -135,7 +135,7 @@ export default function Projects() {
                         {tech}
                       </span>
                     ))}
-                    {project.technologies.length > 3 && (
+                    {project.technologies.length > 4 && (
                       <span className="px-2 py-1 bg-gray-700 rounded-full text-xs text-gray-200">
                         +{project.technologies.length - 3}
                       </span>
