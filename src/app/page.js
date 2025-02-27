@@ -7,18 +7,20 @@ export default function HomePage() {
       <section className="max-w-5xl mx-auto mt-6 mb-8">
         <div className="flex flex-col md:flex-row items-center space-y-6 md:space-y-0 md:space-x-8 p-6 bg-gray-800/80 backdrop-blur-sm rounded-xl shadow-lg transition-all duration-300 hover:shadow-xl">
           <div className="w-full md:w-1/3 max-w-[250px] relative">
-            <div className="absolute inset-0 bg-blue-500 rounded-full blur-md opacity-20 transform -translate-x-2 translate-y-2"></div>
             <Image
               src="/images/photo_pro.jpg"
               alt="Dimitri's photo"
               width={250}
               height={250}
-              className="relative w-full h-auto rounded-full shadow-md border-2 border-blue-400/30"
+              className="w-full h-auto rounded-full shadow-md"
             />
           </div>
 
           <div className="w-full md:w-2/3 text-center md:text-left">
-            <h1 className="text-4xl font-semibold text-white mb-2 font-display">👋 Hi There!</h1>
+            <h1 className="text-4xl font-semibold text-white mb-2 font-display">
+              <span className="inline-block animate-[wave_2.5s_ease_infinite] origin-[70%_70%]">👋</span> 
+              {" "}<span className="inline-block animate-[fadeIn_0.8s_ease_forwards]">Hi There!</span>
+            </h1>
             <h1 className="text-4xl font-semibold text-white mb-4 font-display">
               I'm <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-teal-400 font-bold">Dimitri Jacquemont</span>
             </h1>
