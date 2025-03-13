@@ -3,7 +3,7 @@ import { Github, Linkedin, Mail } from 'lucide-react';
 
 export default function HomePage() {
   return (
-    <div className="min-h-screen bg-gray-900 text-left px-6 pt-6 overflow-y-auto">
+    <div className="bg-gray-900 text-left px-6 pt-6">
       <section className="max-w-5xl mx-auto mt-6 mb-8">
         <div className="flex flex-col md:flex-row items-center space-y-6 md:space-y-0 md:space-x-8 p-6 bg-gray-800/80 backdrop-blur-sm rounded-xl shadow-lg transition-all duration-300 hover:shadow-xl">
           <div className="w-full md:w-1/3 max-w-[250px] relative">

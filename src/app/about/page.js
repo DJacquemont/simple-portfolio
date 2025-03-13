@@ -6,25 +6,29 @@ export default function About() {
       institution: "University of California, Berkeley",
       degree: "Visiting Student Researcher",
       period: "Spring 2025 - Present",
+      location: "Berkeley, California, USA",
       description: "Development of a drone-based system for photovoltaic arrays cleaning."
     },
     {
-      institution: "École Polytechnique Fédérale de Lausanne (EPFL)",
+      institution: "École Polytechnique Fédérale de Lausanne",
       degree: "Master's in Robotics",
       period: "September 2022 - Present",
-      description: "Specializing in advanced robotics systems with focus on autonomous navigation, computer vision, and robotic control systems."
+      location: "Lausanne, Switzerland",
+      description: "Specializing in advanced robotics systems with focus on autonomous navigation, computer vision, perception, and robotic control systems."
     },
     {
-      institution: "Technical University of Denmark (DTU)",
+      institution: "Technical University of Denmark",
       degree: "Exchange Program",
       period: "September 2021 - June 2022",
+      location: "Copenhagen, Denmark",
       description: "Specialized in autonomous systems and robotics."
     },
     {
-      institution: "École Polytechnique Fédérale de Lausanne (EPFL)",
+      institution: "École Polytechnique Fédérale de Lausanne",
       degree: "Bachelor's in Microengineering",
       period: "September 2019 - June 2022",
-      description: "Fundamental engineering principles with emphesis in embedded systems."
+      location: "Lausanne, Switzerland",
+      description: "Fundamental engineering principles with emphesis in electronics, computer science, robotics."
     }
   ];
 
@@ -61,7 +65,7 @@ export default function About() {
       company: "Tethys Robotics",
       position: "Robotics Engineering Intern",
       period: "Summer 2022",
-      location: "Switzerland",
+      location: "Zürich, Switzerland",
       description: "Designed and programmed an Electronic Speed Controller (ESC) for Unmanned Underwater Vehicles. Implemented robust control algorithms and communication protocols (CAN) for reliable underwater operation."
     }
   ];
@@ -78,7 +82,7 @@ export default function About() {
   };
 
   return (
-    <div className="absolute inset-0 bg-gray-900 text-left px-6 pt-6 overflow-y-auto" style={{ top: '4rem' }}>
+    <div className="bg-gray-900 text-left overflow-hidden">
       <div className="max-w-5xl mx-auto pb-12">
         <h1 className="text-4xl font-semibold text-white mb-6">About Me</h1>
 
@@ -102,7 +106,11 @@ export default function About() {
               <div key={index} className="border-l-2 border-blue-500 pl-4 ml-2">
                 <h3 className="text-xl font-medium text-white">{edu.institution}</h3>
                 <p className="text-blue-300 font-medium">{edu.degree}</p>
-                <p className="text-gray-400 text-sm mb-2">{edu.period}</p>
+                <div className="flex items-center text-gray-400 text-sm mb-2">
+                  <span>{edu.period}</span>
+                  <span className="mx-2">•</span>
+                  <span>{edu.location}</span>
+                </div>
                 <p className="text-gray-300">{edu.description}</p>
               </div>
             ))}
