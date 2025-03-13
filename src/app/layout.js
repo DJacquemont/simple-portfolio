@@ -14,8 +14,8 @@ export default function RootLayout({ children }) {
       </head>
       <body className="bg-gray-900">
         <Navigation />
-        <main className="flex justify-center items-start min-h-screen px-6 py-6">
-          <div className="max-w-5xl w-full">{children}</div>
+        <main className="px-6 py-6">
+          <div className="max-w-5xl mx-auto">{children}</div>
         </main>
       </body>
     </html>

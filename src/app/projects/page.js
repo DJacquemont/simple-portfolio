@@ -32,7 +32,7 @@ export default function Projects() {
       id: '4',
       title: 'Useless Box 🎁',
       year: '2023',
-      description: 'Designed and built a Useless Box as a personal project, a playful machine that turns itself off when turned on and displays different "emotions" each time.',
+      description: 'Designed and built a Useless Box as a personal project, a playful machine that turns itself off when turned on and displays different emotions each time.',
       technologies: ['Electronics', 'Arduino', '3D Printer'],
       imageUrl: '/images/uselessbox.gif'
     },
@@ -93,7 +93,7 @@ export default function Projects() {
   ];
 
   return (
-    <div className="absolute inset-0 bg-gray-900 text-left px-6 pt-6 overflow-y-auto" style={{ top: '4rem' }}>
+    <div className="bg-gray-900 text-left overflow-hidden">
       <div className="max-w-5xl mx-auto pb-12">
         <h1 className="text-4xl font-semibold text-white mb-6">Projects</h1>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
