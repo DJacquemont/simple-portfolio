@@ -20,11 +20,9 @@ export default function HomePage() {
             <h1 className="text-4xl font-semibold text-white mb-2 font-display">
               <span className="inline-block animate-[wave_2.5s_ease_infinite] origin-[70%_70%]">👋</span> 
               {" "}<span className="inline-block animate-[fadeIn_0.8s_ease_forwards]">Hi There!</span>
+              {" "}I'm <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-teal-400 font-bold">Dimitri</span>
             </h1>
-            <h1 className="text-4xl font-semibold text-white mb-4 font-display">
-              I'm <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-teal-400 font-bold">Dimitri Jacquemont</span>
-            </h1>
-            <p className="text-lg text-gray-300 leading-relaxed">
+            <p className="text-lg text-gray-300 leading-relaxed mt-10">
               Passionate about <span className="text-blue-300 font-medium">Software, Robotics, and Engineering</span>, I am driven by <span className="text-blue-300 font-medium">innovation</span> and <span className="text-blue-300 font-medium">hands-on problem-solving</span>.
             </p>
           </div>
