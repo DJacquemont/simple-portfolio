@@ -7,7 +7,7 @@ export default function About() {
       degree: "Visiting Student Researcher",
       period: "Spring 2025 - Present",
       location: "Berkeley, California, USA",
-      description: "Development of a drone-based system for photovoltaic arrays cleaning."
+      description: "Development of a drone-based system with advanced control and perception algorithms to efficiently clean large photovoltaic arrays."
     },
     {
       institution: "École Polytechnique Fédérale de Lausanne",
