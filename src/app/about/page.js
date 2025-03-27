@@ -71,7 +71,7 @@ export default function About() {
   ];
 
   const skillsData = {
-    programming: ["Python", "Pytorch", "C++", "MATLAB", "ROS", "Docker", "Linux"],
+    programming: ["Python", "Pytorch", "C++", "MATLAB", "ROS", "Docker", "Linux", "OpenCV", "PCL", "CI/CD"],
     hardware: ["Microcontrollers (PIC, STM32, ATmega)", "PCB Design (KiCad)"],
     cad: ["Creo", "CATIA", "SOLIDWORKS"],
     languages: [
