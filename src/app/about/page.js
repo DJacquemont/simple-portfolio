@@ -35,7 +35,7 @@ export default function About() {
   const experienceData = [
     {
       company: "Sevensense Robotics",
-      position: "Robotic System Engineer Intern",
+      position: "Robotic Systems Engineer Intern",
       period: "July 2024 - December 2024",
       location: "Zürich, Switzerland",
       description: "Working on integration of different software subsystems and implementation of automated tests through CI/CD pipelines for robotics solutions."
