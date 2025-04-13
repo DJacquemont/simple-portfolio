@@ -2,6 +2,14 @@ export default function Projects() {
   const projectsList = [
     {
       id: '1',
+      title: 'Drone System for PV Panel Cleaning',
+      year: '2025',
+      description: 'Development of a drone-based system with advanced control and perception algorithms to efficiently clean large photovoltaic arrays as part of my Master\'s thesis @ <a href="https://hiperlab.berkeley.edu/" class="text-blue-400 hover:text-blue-300 transition-colors underline decoration-dotted underline-offset-2">HiPeRLab</a>.',
+      technologies: ['Python', 'C++', 'ROS'],
+      imageUrl: '/images/drone_hiperlab.gif'
+    },
+    {
+      id: '2',
       title: 'BlockBuster 🥇',
       year: '2024',
       description: 'As part of a three-student team, we successfully designed, constructed, and programmed an autonomous robot for the <a href="https://robot-competition.epfl.ch/" class="text-blue-400 hover:text-blue-300 transition-colors underline decoration-dotted underline-offset-2">EPFL Robot Competition 2024</a>, ultimately securing a first-place win.',
@@ -11,7 +19,7 @@ export default function Projects() {
       imageUrl: '/images/blockbuster.gif'
     },
     {
-      id: '2',
+      id: '3',
       title: 'Camera and LCD Controllers for an FPGA 📷',
       year: '2023',
       description: 'Design and implementation of LCD and Camera controllers: the LCD controller displays video data on a screen, while the Camera controller captures and transmits the data for visualization.',
@@ -20,16 +28,16 @@ export default function Projects() {
       imageUrl: '/images/fpgaproj.png'
     },
     {
-      id: '3',
+      id: '4',
       title: 'Point Cloud Segmentation of Infrastructural Steel Elements',
       year: '2023',
-      description: 'Developed a real-time ROS segmentation pipeline using a ToF camera on a Micro Aerial Vehicle (MAV) to capture and process 3D point-cloud data for extracting 3D structures. This project was conducted at the <a href="https://www.epfl.ch/labs/disal/" class="text-blue-400 hover:text-blue-300 transition-colors underline decoration-dotted underline-offset-2">DISAL Lab</a> at EPFL',
+      description: 'Developed a real-time ROS segmentation pipeline using a ToF camera on a Micro Aerial Vehicle (MAV) to capture and process 3D point-cloud data for extracting 3D structures. This project was conducted @ <a href="https://www.epfl.ch/labs/disal/" class="text-blue-400 hover:text-blue-300 transition-colors underline decoration-dotted underline-offset-2">DISAL Lab</a> at EPFL',
       technologies: ['C++', 'ROS', 'Point-Cloud'],
       githubUrl: 'https://github.com/DJacquemont/pointcloud_segmentation',
       imageUrl: '/images/pcseg.gif'
     },
     {
-      id: '4',
+      id: '5',
       title: 'Useless Box 🎁',
       year: '2023',
       description: 'Designed and built a Useless Box as a personal project, a playful machine that turns itself off when turned on and displays different emotions each time.',
@@ -37,7 +45,7 @@ export default function Projects() {
       imageUrl: '/images/uselessbox.gif'
     },
     {
-      id: '5',
+      id: '6',
       title: 'RoboCup@Home 🦿',
       year: '2023',
       description: 'Part of a six-student team developing software for the <a href="https://make.epfl.ch/projects/12/make-robocup" class="text-blue-400 hover:text-blue-300 transition-colors underline decoration-dotted underline-offset-2">RoboCup@Home competition project at EPFL</a>, led by the <a href="https://www.epfl.ch/labs/create/" class="text-blue-400 hover:text-blue-300 transition-colors underline decoration-dotted underline-offset-2">CREATE Lab</a>.',
@@ -46,7 +54,7 @@ export default function Projects() {
       imageUrl: '/images/robocup.jpg'
     },
     {
-      id: '6',
+      id: '7',
       title: 'Pedestrian Intention Prediction 👁️',
       year: '2023',
       description: 'Developed a deep learning model based on <a href="https://github.com/Walter0807/MotionBERT" class="text-blue-400 hover:text-blue-300 transition-colors underline decoration-dotted underline-offset-2">MotionBERT</a> to predict pedestrian intentions in videos, trained on the <a href="https://data.nvision2.eecs.yorku.ca/JAAD_dataset/" class="text-blue-400 hover:text-blue-300 transition-colors underline decoration-dotted underline-offset-2">JAAD dataset</a>.',
@@ -55,7 +63,7 @@ export default function Projects() {
       imageUrl: '/images/pedintpred.gif'
     },
     {
-      id: '7',
+      id: '8',
       title: 'Hot Wheels 🚗',
       year: '2022',
       description: 'Development software for the Thymio robot to navigate autonomously through obstacles by localizing itself, optimizing its path using Dijkstra\'s algorithm, and avoiding unexpected objects.',
@@ -64,7 +72,7 @@ export default function Projects() {
       imageUrl: '/images/hotwheels.png'
     },
     {
-      id: '8',
+      id: '9',
       title: 'Temperature Controller 🌡️',
       year: '2021',
       description: 'Design and programming of a temperature monitoring system that controls cooling by opening valves for airflow. It triggers an alarm if the temperature goes above a set limit.',
@@ -73,7 +81,7 @@ export default function Projects() {
       imageUrl: '/images/tempcont.png'
     },
     {
-      id: '9',
+      id: '10',
       title: 'Logic Watch ⌚',
       year: '2020',
       description: 'Development of a device that can display the time, time zones, sound the alarm, and have a stopwatch mode as well as a timer mode',
@@ -82,7 +90,7 @@ export default function Projects() {
       imageUrl: '/images/logicwatch.png'
     },
     {
-      id: '10',
+      id: '11',
       title: 'Archipelago 🏝️',
       year: '2020',
       description: 'Developed a tool to assess the efficiency of a floating city design, featuring circular islands and bridges.',
