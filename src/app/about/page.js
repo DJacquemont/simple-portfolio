@@ -7,7 +7,7 @@ export default function About() {
       degree: "Visiting Student Researcher",
       period: "Spring 2025 - Present",
       location: "Berkeley, California, USA",
-      description: "Development of a drone-based system with advanced control and perception algorithms to efficiently clean large photovoltaic arrays."
+      description: "Development of a drone-based system with advanced control and perception algorithms to efficiently coat large photovoltaic arrays."
     },
     {
       institution: "École Polytechnique Fédérale de Lausanne",
@@ -76,7 +76,7 @@ export default function About() {
     cad: ["Creo", "CATIA", "SOLIDWORKS"],
     languages: [
       { name: "French", level: "Native" },
-      { name: "English", level: "C1" },
+      { name: "English", level: "C2" },
       { name: "German", level: "A2" }
     ]
   };

@@ -2,11 +2,12 @@ export default function Projects() {
   const projectsList = [
     {
       id: '1',
-      title: 'Drone System for PV Panel Cleaning',
+      title: 'Drone System for PV Panel Coating 🚁',
       year: '2025',
-      description: 'Development of a drone-based system with advanced control and perception algorithms to efficiently clean large photovoltaic arrays as part of my Master\'s thesis @ <a href="https://hiperlab.berkeley.edu/" class="text-blue-400 hover:text-blue-300 transition-colors underline decoration-dotted underline-offset-2">HiPeRLab</a>.',
+      description: 'Development of a drone-based system with advanced control and perception algorithms to efficiently coat large photovoltaic arrays as part of my Master\'s thesis @ <a href="https://hiperlab.berkeley.edu/" class="text-blue-400 hover:text-blue-300 transition-colors underline decoration-dotted underline-offset-2">HiPeRLab</a>.',
       technologies: ['Python', 'C++', 'ROS'],
-      imageUrl: '/images/drone_hiperlab.gif'
+      imageUrl: '/images/drone_hiperlab.gif',
+      arxivUrl: 'https://arxiv.org/pdf/2509.10979v2'
     },
     {
       id: '2',
@@ -170,6 +171,16 @@ export default function Projects() {
                       className="px-3 py-1 bg-blue-600 hover:bg-blue-700 rounded-lg text-xs font-medium transition"
                     >
                       Demo
+                    </a>
+                  )}
+                  {project.arxivUrl && (
+                    <a 
+                      href={project.arxivUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="px-3 py-1 bg-teal-600 hover:bg-teal-700 rounded-lg text-xs font-medium transition"
+                    >
+                      ArXiv
                     </a>
                   )}
                 </div>
