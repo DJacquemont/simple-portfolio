@@ -76,7 +76,7 @@ export default function About() {
     cad: ["Creo", "CATIA", "SOLIDWORKS"],
     languages: [
       { name: "French", level: "Native" },
-      { name: "English", level: "C2" },
+      { name: "English", level: "C1" },
       { name: "German", level: "A2" }
     ]
   };
