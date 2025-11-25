@@ -5,28 +5,28 @@ export default function About() {
     {
       institution: "University of California, Berkeley",
       degree: "Visiting Student Researcher",
-      period: "Spring 2025 - Present",
+      period: "February 2025 - August 2025",
       location: "Berkeley, California, USA",
       description: "Development of a drone-based system with advanced control and perception algorithms to efficiently coat large photovoltaic arrays."
     },
     {
       institution: "École Polytechnique Fédérale de Lausanne",
       degree: "Master's in Robotics",
-      period: "September 2022 - Present",
+      period: "September 2022 - August 2025",
       location: "Lausanne, Switzerland",
       description: "Specializing in advanced robotics systems with focus on autonomous navigation, computer vision, perception, and robotic control systems."
     },
     {
       institution: "Technical University of Denmark",
       degree: "Exchange Program",
-      period: "September 2021 - June 2022",
+      period: "September 2021 - August 2022",
       location: "Copenhagen, Denmark",
       description: "Specialized in autonomous systems and robotics."
     },
     {
       institution: "École Polytechnique Fédérale de Lausanne",
       degree: "Bachelor's in Microengineering",
-      period: "September 2019 - June 2022",
+      period: "September 2019 - August 2022",
       location: "Lausanne, Switzerland",
       description: "Fundamental engineering principles with emphesis in electronics, computer science, robotics."
     }
@@ -34,11 +34,18 @@ export default function About() {
 
   const experienceData = [
     {
+      company: "EPFL",
+      position: "Robotic Research Engineer",
+      period: "October 2025 - Present",
+      location: "Lausanne, Switzerland",
+      description: "Developing and maintaining robotic control and ML software frameworks, supporting researchers, and contributing to robotics experiments."
+    },
+    {
       company: "Sevensense Robotics",
       position: "Robotic Systems Engineer Intern",
       period: "July 2024 - December 2024",
       location: "Zürich, Switzerland",
-      description: "Working on integration of different software subsystems and implementation of automated tests through CI/CD pipelines for robotics solutions."
+      description: "Worked on integration of different software subsystems and implementation of automated tests through CI/CD pipelines for robotics solutions."
     },
     {
       company: "BIOROB Lab (EPFL)",
@@ -89,7 +96,7 @@ export default function About() {
         <div className="bg-gray-800 rounded-xl shadow-lg p-6 mb-8">
           <h2 className="text-2xl font-semibold text-white mb-4">Who I Am 🤖</h2>
           <p className="text-gray-300 mb-4">
-            I'm an EPFL Master's student in Robotics, deeply passionate about <span className="text-blue-300 font-medium">Software, Robotics, and Engineering</span>. 
+            I'm a Robotics Engineer, deeply passionate about <span className="text-blue-300 font-medium">Software, Robotics, and Engineering</span>. 
           </p>
           <p className="text-gray-300 mb-4">
             As a dedicated DIY enthusiast, I'm driven by <span className="text-blue-300 font-medium">innovation and hands-on problem-solving</span>. I believe in the power of robotics to transform industries and improve human lives, which drives my commitment to advancing this technology through my work and research.
