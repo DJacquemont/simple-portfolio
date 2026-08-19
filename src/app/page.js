@@ -20,10 +20,10 @@ export default function HomePage() {
             <h1 className="text-4xl font-semibold text-white mb-2 font-display">
               <span className="inline-block animate-[wave_2.5s_ease_infinite] origin-[70%_70%]">👋</span> 
               {" "}<span className="inline-block animate-[fadeIn_0.8s_ease_forwards]">Hi There!</span>
-              {" "}I'm <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-teal-400 font-bold">Dimitri</span>
+              {" "}I'm <span className="text-blue-300 font-bold">Dimitri</span>
             </h1>
             <p className="text-lg text-gray-300 leading-relaxed mt-10">
-              Passionate about <span className="text-blue-300 font-medium">Software, Robotics, and Engineering</span>, I am driven by <span className="text-blue-300 font-medium">innovation</span> and <span className="text-blue-300 font-medium">hands-on problem-solving</span>.
+              Hands-on <span className="text-blue-200 font-medium">Robotics Engineer</span> building and integrating robotic systems across software and hardware. Experienced in troubleshooting and solving problems spanning software, hardware, and networking.
             </p>
           </div>
         </div>
@@ -31,15 +31,12 @@ export default function HomePage() {
 
       <section className="flex flex-col lg:flex-row justify-between gap-6 max-w-5xl mx-auto pt-4 pb-12">
         <div className="w-full lg:w-3/4 bg-gray-800/80 backdrop-blur-sm rounded-xl shadow-lg p-6 transition-all duration-300 hover:shadow-xl">
-          <h2 className="text-2xl font-semibold text-white mb-4 font-display pb-2">A Little More About Me 🤖</h2>
+          <h2 className="text-2xl font-semibold text-white mb-4 font-display pb-2">What I Do</h2>
           <p className="text-base text-gray-300 leading-relaxed">
-            I specialize in <span className="text-blue-300 font-medium">software development for robotics</span>, with a strong passion for <span className="text-blue-300 font-medium">systems</span> and <span className="text-blue-300 font-medium">hands-on problem-solving</span>. My academic journey at <ExternalLink href="https://www.epfl.ch/en/" label="EPFL" />, <ExternalLink href="https://www.dtu.dk/english/" label="DTU" />, and <ExternalLink href="https://www.berkeley.edu/" label="UC Berkeley" /> led me to focus on robotics, where I've worked on various exciting projects.
+            I'm a robotics software engineer with a strong interest in systems, control, and hands-on problem-solving. My academic journey at <ExternalLink href="https://www.epfl.ch/en/" label="EPFL" />, <ExternalLink href="https://www.dtu.dk/english/" label="DTU" />, and <ExternalLink href="https://www.berkeley.edu/" label="UC Berkeley" /> has shaped my focus on robotics and given me the opportunity to work across a wide range of platforms and applications.
           </p>
           <p className="text-base text-gray-300 mt-4 leading-relaxed">
-          I completed an internship at <ExternalLink href="https://www.sevensense.ai/" label="Sevensense" />, now part of <ExternalLink href="https://global.abb/group/en" label="ABB" />, working with state-of-the-art navigation and localization solutions for autonomous mobile robots. Additionally, I interned at <ExternalLink href="https://www.tethys-robotics.ch/" label="Tethys Robotics" />, designing and programming an Electronic Speed Controller for Unmanned Underwater Vehicles. 
-          </p>
-          <p className="text-base text-gray-300 mt-4 leading-relaxed">
-            Driven by a <span className="text-blue-300 font-medium">passion for robotics</span>, I'm eager to continue advancing in this exciting field.
+            I currently work as a Robotics Research Engineer at the <ExternalLink href="https://www.epfl.ch/labs/lasa/" label="Learning Algorithms and Systems Laboratory (EPFL)" />, where I develop and maintain software frameworks for robot arms, with a focus on control and machine learning. Previously, I worked at <ExternalLink href="https://www.sevensense.ai/" label="Sevensense" />, now part of <ExternalLink href="https://global.abb/group/en" label="ABB" />, on navigation and localization for autonomous mobile robots, and as a visiting researcher at UC Berkeley&apos;s <ExternalLink href="https://hiperlab.berkeley.edu/" label="HiPeRLab" />, where I worked on close-proximity drone flight. I also interned at <ExternalLink href="https://www.tethys-robotics.ch/" label="Tethys Robotics" />, where I designed and programmed an Electronic Speed Controller for Unmanned Underwater Vehicles.
           </p>
         </div>
 
@@ -58,7 +55,7 @@ export default function HomePage() {
 
 function ExternalLink({ href, label }) {
   return (
-    <a href={href} className="text-blue-400 hover:text-blue-300 transition-colors underline decoration-dotted underline-offset-2" target="_blank" rel="noopener noreferrer">
+    <a href={href} className="text-blue-300 hover:text-blue-200 transition-colors underline decoration-dotted underline-offset-2" target="_blank" rel="noopener noreferrer">
       {label}
     </a>
   );
@@ -66,7 +63,7 @@ function ExternalLink({ href, label }) {
 
 function SocialLink({ href, icon, label }) {
   return (
-    <a href={href} className="w-full text-blue-400 hover:text-blue-300 hover:bg-gray-700/50 flex items-center justify-center p-3 rounded-lg transition-all duration-200 group">
+    <a href={href} className="w-full text-blue-300 hover:text-blue-200 hover:bg-gray-700/50 flex items-center justify-center p-3 rounded-lg transition-all duration-200 group">
       {icon}
       <span className="text-lg group-hover:translate-x-1 transition-transform duration-200">{label}</span>
     </a>

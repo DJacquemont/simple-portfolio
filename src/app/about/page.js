@@ -18,9 +18,9 @@ export default function About() {
     },
     {
       institution: "Technical University of Denmark",
-      degree: "Exchange Program",
+      degree: "Exchange Year - Electrical and Mechanical Engineering",
       period: "September 2021 - August 2022",
-      location: "Copenhagen, Denmark",
+      location: "Lyngby, Denmark",
       description: "Specialized in autonomous systems and robotics."
     },
     {
@@ -34,25 +34,32 @@ export default function About() {
 
   const experienceData = [
     {
-      company: "EPFL",
-      position: "Robotic Research Engineer",
+      company: "Learning Algorithms and Systems Laboratory (EPFL)",
+      position: "Robotics Research Engineer",
       period: "October 2025 - Present",
       location: "Lausanne, Switzerland",
-      description: "Developing and maintaining robotic control and ML software frameworks, supporting researchers, and contributing to robotics experiments."
+      description: "Developing and maintaining control and machine learning software frameworks for robot arms."
     },
     {
-      company: "Sevensense Robotics",
-      position: "Robotic Systems Engineer Intern",
+      company: "UC Berkeley, HiPeRLab (High Performance Robotics Lab)",
+      position: "Visiting Student Researcher",
+      period: "February 2025 - August 2025",
+      location: "Berkeley, US",
+      description: "Developed a novel ground-effect compensation scheme for close-proximity drone flight, integrating multi-control, vision localization, and navigation for autonomous flight. IROS paper: <a href='https://arxiv.org/pdf/2509.10979' class='text-blue-300 hover:text-blue-200 transition-colors underline decoration-dotted underline-offset-2' target='_blank' rel='noopener noreferrer'>Autonomous Close-Proximity Photovoltaic Panel Coating Using a Quadcopter</a>."
+    },
+    {
+      company: "Sevensense Robotics (ABB Robotics)",
+      position: "Internship, Robotic Systems Engineer",
       period: "July 2024 - December 2024",
       location: "Zürich, Switzerland",
-      description: "Worked on integration of different software subsystems and implementation of automated tests through CI/CD pipelines for robotics solutions."
+      description: "Tested and debugged the industrial floor cleaning robot as part of release testing, built system-level tests with pytest and GitLab CI/CD, and implemented a PoC for new autonomous navigation."
     },
     {
       company: "BIOROB Lab (EPFL)",
-      position: "EPFL Robotic Competition",
+      position: "EPFL Robotic Competition (Secured first place)",
       period: "February 2024 - June 2024",
       location: "Lausanne, Switzerland",
-      description: "Development and Integration of the robot ROS2 system, and High-Level FSM."
+      description: "Integrated the ROS2 SLAM navigation system and stereoscopic-camera object detection, and developed the ROS2 control stack and high-level FSM for the winning autonomous robot."
     },
     {
       company: "DISAL Lab (EPFL)",
@@ -70,16 +77,18 @@ export default function About() {
     },
     {
       company: "Tethys Robotics",
-      position: "Robotics Engineering Intern",
-      period: "Summer 2022",
+      position: "Internship, Robotic Electrical Engineer",
+      period: "June 2022 - September 2022",
       location: "Zürich, Switzerland",
-      description: "Designed and programmed an Electronic Speed Controller (ESC) for Unmanned Underwater Vehicles. Implemented robust control algorithms and communication protocols (CAN) for reliable underwater operation."
+      description: "Built a proof-of-concept electronic speed controller (ESC) for underwater thrusters, designed an optimized ESC PCB with on-board sensing, and developed STM32 firmware for motor control."
     }
   ];
 
   const skillsData = {
-    programming: ["Python", "Pytorch", "C++", "MATLAB", "ROS", "Docker", "Linux", "OpenCV", "PCL", "CI/CD"],
-    hardware: ["Microcontrollers (PIC, STM32, ATmega)", "PCB Design (KiCad)"],
+    programming: ["Python", "C/C++", "ROS/ROS2", "Docker", "Linux", "Git", "MATLAB", "Pytorch", "OpenCV", "PCL"],
+    simulationTesting: ["Gazebo", "CI/CD", "System Testing", "Test Automation", "pytest"],
+    hardware: ["STM32", "Motor Drives", "Embedded Systems", "PCB (KiCad)", "Sensors", "3D Printing", "Microcontrollers (PIC, ATmega)"],
+    controlMotion: ["Impedance Control", "Torque Control", "Motion Planning", "Dynamic Systems", "State Estimation"],
     cad: ["Creo", "CATIA", "SOLIDWORKS"],
     languages: [
       { name: "French", level: "Native" },
@@ -91,28 +100,22 @@ export default function About() {
   return (
     <div className="bg-gray-900 text-left overflow-hidden">
       <div className="max-w-5xl mx-auto pb-12">
-        <h1 className="text-4xl font-semibold text-white mb-6">About Me</h1>
-
         <div className="bg-gray-800 rounded-xl shadow-lg p-6 mb-8">
-          <h2 className="text-2xl font-semibold text-white mb-4">Who I Am 🤖</h2>
           <p className="text-gray-300 mb-4">
-            I'm a Robotics Engineer, deeply passionate about <span className="text-blue-300 font-medium">Software, Robotics, and Engineering</span>. 
-          </p>
-          <p className="text-gray-300 mb-4">
-            As a dedicated DIY enthusiast, I'm driven by <span className="text-blue-300 font-medium">innovation and hands-on problem-solving</span>. I believe in the power of robotics to transform industries and improve human lives, which drives my commitment to advancing this technology through my work and research.
+            Robotics Engineer with a passion for building things and figuring out how they work. I enjoy combining software, hardware, and hands-on experimentation to turn ideas into working systems.
           </p>
         </div>
 
         <div className="bg-gray-800 rounded-xl shadow-lg p-6 mb-8">
           <div className="flex items-center mb-4">
-            <BookOpenIcon className="h-6 w-6 text-blue-400 mr-2" />
+            <BookOpenIcon className="h-6 w-6 text-blue-300 mr-2" />
             <h2 className="text-2xl font-semibold text-white">Education</h2>
           </div>
           <div className="space-y-6">
             {educationData.map((edu, index) => (
-              <div key={index} className="border-l-2 border-blue-500 pl-4 ml-2">
+              <div key={index} className="border-l-2 border-blue-400 pl-4 ml-2">
                 <h3 className="text-xl font-medium text-white">{edu.institution}</h3>
-                <p className="text-blue-300 font-medium">{edu.degree}</p>
+                <p className="text-blue-200 font-medium">{edu.degree}</p>
                 <div className="flex items-center text-gray-400 text-sm mb-2">
                   <span>{edu.period}</span>
                   <span className="mx-2">•</span>
@@ -126,20 +129,20 @@ export default function About() {
 
         <div className="bg-gray-800 rounded-xl shadow-lg p-6 mb-8">
           <div className="flex items-center mb-4">
-            <BriefcaseIcon className="h-6 w-6 text-blue-400 mr-2" />
+            <BriefcaseIcon className="h-6 w-6 text-blue-300 mr-2" />
             <h2 className="text-2xl font-semibold text-white">Experience</h2>
           </div>
           <div className="space-y-6">
             {experienceData.map((exp, index) => (
-              <div key={index} className="border-l-2 border-blue-500 pl-4 ml-2">
+              <div key={index} className="border-l-2 border-blue-400 pl-4 ml-2">
                 <h3 className="text-xl font-medium text-white">{exp.company}</h3>
-                <p className="text-blue-300 font-medium">{exp.position}</p>
+                <p className="text-blue-200 font-medium">{exp.position}</p>
                 <div className="flex items-center text-gray-400 text-sm mb-2">
                   <span>{exp.period}</span>
                   <span className="mx-2">•</span>
                   <span>{exp.location}</span>
                 </div>
-                <p className="text-gray-300">{exp.description}</p>
+                <p className="text-gray-300" dangerouslySetInnerHTML={{ __html: exp.description }}></p>
               </div>
             ))}
           </div>
@@ -147,7 +150,7 @@ export default function About() {
 
         <div className="bg-gray-800 rounded-xl shadow-lg p-6 mb-8">
           <div className="flex items-center mb-4">
-            <ServerIcon className="h-6 w-6 text-blue-400 mr-2" />
+            <ServerIcon className="h-6 w-6 text-blue-300 mr-2" />
             <h2 className="text-2xl font-semibold text-white">Technical Skills</h2>
           </div>
           
@@ -164,9 +167,31 @@ export default function About() {
             </div>
             
             <div>
-              <h3 className="text-xl font-medium text-white mb-3">Hardware 🔌</h3>
+              <h3 className="text-xl font-medium text-white mb-3">Simulation & Testing 🧪</h3>
+              <div className="flex flex-wrap gap-2">
+                {skillsData.simulationTesting.map((skill, idx) => (
+                  <span key={idx} className="px-3 py-1 bg-gray-700 rounded-full text-sm text-gray-200">
+                    {skill}
+                  </span>
+                ))}
+              </div>
+            </div>
+            
+            <div>
+              <h3 className="text-xl font-medium text-white mb-3">Hardware & Mechatronics 🔌</h3>
               <div className="flex flex-wrap gap-2">
                 {skillsData.hardware.map((skill, idx) => (
+                  <span key={idx} className="px-3 py-1 bg-gray-700 rounded-full text-sm text-gray-200">
+                    {skill}
+                  </span>
+                ))}
+              </div>
+            </div>
+
+            <div>
+              <h3 className="text-xl font-medium text-white mb-3">Control & Motion 🎛️</h3>
+              <div className="flex flex-wrap gap-2">
+                {skillsData.controlMotion.map((skill, idx) => (
                   <span key={idx} className="px-3 py-1 bg-gray-700 rounded-full text-sm text-gray-200">
                     {skill}
                   </span>
@@ -189,7 +214,7 @@ export default function About() {
         
         <div className="bg-gray-800 rounded-xl shadow-lg p-6 mb-8">
           <div className="flex items-center mb-4">
-            <GlobeIcon className="h-6 w-6 text-blue-400 mr-2" />
+            <GlobeIcon className="h-6 w-6 text-blue-300 mr-2" />
             <h2 className="text-2xl font-semibold text-white">Languages</h2>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
@@ -204,7 +229,7 @@ export default function About() {
         
         <div className="bg-gray-800 rounded-xl shadow-lg p-6">
           <div className="flex items-center mb-4">
-            <CodeIcon className="h-6 w-6 text-blue-400 mr-2" />
+            <CodeIcon className="h-6 w-6 text-blue-300 mr-2" />
             <h2 className="text-2xl font-semibold text-white">Interests & Activities</h2>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
