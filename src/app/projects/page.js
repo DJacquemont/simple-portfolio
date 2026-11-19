@@ -1,10 +1,21 @@
+import { Github, PlayCircle, FileText } from 'lucide-react';
+
 export default function Projects() {
   const projectsList = [
+    {
+      id: '0',
+      title: 'Reactive Manipulation Demo on a Neura Arm 🦾',
+      year: '2026',
+      description: 'Developed a live demo @ <a href="https://www.epfl.ch/labs/lasa/" class="text-accent hover:text-accent-soft transition-colors underline decoration-dotted underline-offset-2">LASA</a> in which a robot arm throws objects precisely at a target following a kinodynamic trajectory, while avoiding moving obstacles and people in real time. It builds on research by Dr. M. Koptev and Dr. Yang Liu.',
+      technologies: ['Python', 'C++', 'ROS2', 'MPC'],
+      demoUrl: '/videos/neura_demo.mp4',
+      imageUrl: '/images/neura_demo.webp'
+    },
     {
       id: '1',
       title: 'Drone System for PV Panel Coating 🚁',
       year: '2025',
-      description: 'Development of a drone-based system with advanced control and perception algorithms to efficiently coat large photovoltaic arrays as part of my Master\'s thesis @ <a href="https://hiperlab.berkeley.edu/" class="text-blue-300 hover:text-blue-200 transition-colors underline decoration-dotted underline-offset-2">HiPeRLab</a>.',
+      description: 'Development of a drone-based system with advanced control and perception algorithms to efficiently coat large photovoltaic arrays as part of my Master\'s thesis @ <a href="https://hiperlab.berkeley.edu/" class="text-accent hover:text-accent-soft transition-colors underline decoration-dotted underline-offset-2">HiPeRLab</a>.',
       technologies: ['Python', 'C++', 'ROS'],
       imageUrl: '/images/drone_hiperlab.webp',
       arxivUrl: 'https://arxiv.org/pdf/2509.10979v2'
@@ -13,7 +24,7 @@ export default function Projects() {
       id: '2',
       title: 'BlockBuster 🥇',
       year: '2024',
-      description: 'As part of a three-student team, we successfully designed, constructed, and programmed an autonomous robot for the <a href="https://robot-competition.epfl.ch/" class="text-blue-300 hover:text-blue-200 transition-colors underline decoration-dotted underline-offset-2">EPFL Robot Competition 2024</a>, ultimately securing a first-place win.',
+      description: 'As part of a three-student team, we successfully designed, constructed, and programmed an autonomous robot for the <a href="https://robot-competition.epfl.ch/" class="text-accent hover:text-accent-soft transition-colors underline decoration-dotted underline-offset-2">EPFL Robot Competition 2024</a>, ultimately securing a first-place win.',
       technologies: ['Python', 'C++', 'ROS2', 'Docker'],
       githubUrl: 'https://github.com/DJacquemont/BlockBuster/tree/main',
       demoUrl: 'https://www.youtube.com/watch?v=ejofCqsJ4cE&ab_channel=DroneBikeTV',
@@ -32,7 +43,7 @@ export default function Projects() {
       id: '4',
       title: 'Point Cloud Segmentation of Infrastructural Steel Elements',
       year: '2023',
-      description: 'Developed a real-time ROS segmentation pipeline using a ToF camera on a Micro Aerial Vehicle (MAV) to capture and process 3D point-cloud data for extracting 3D structures. This project was conducted @ <a href="https://www.epfl.ch/labs/disal/" class="text-blue-300 hover:text-blue-200 transition-colors underline decoration-dotted underline-offset-2">DISAL Lab</a> at EPFL',
+      description: 'Developed a real-time ROS segmentation pipeline using a ToF camera on a Micro Aerial Vehicle (MAV) to capture and process 3D point-cloud data for extracting 3D structures. This project was conducted @ <a href="https://www.epfl.ch/labs/disal/" class="text-accent hover:text-accent-soft transition-colors underline decoration-dotted underline-offset-2">DISAL Lab</a> at EPFL',
       technologies: ['C++', 'ROS', 'Point-Cloud'],
       githubUrl: 'https://github.com/DJacquemont/pointcloud_segmentation',
       imageUrl: '/images/pcseg.webp'
@@ -49,7 +60,7 @@ export default function Projects() {
       id: '6',
       title: 'RoboCup@Home 🦿',
       year: '2023',
-      description: 'Part of a six-student team developing software for the <a href="https://make.epfl.ch/projects/12/make-robocup" class="text-blue-300 hover:text-blue-200 transition-colors underline decoration-dotted underline-offset-2">RoboCup@Home competition project at EPFL</a>, led by the <a href="https://www.epfl.ch/labs/create/" class="text-blue-300 hover:text-blue-200 transition-colors underline decoration-dotted underline-offset-2">CREATE Lab</a>.',
+      description: 'Part of a six-student team developing software for the <a href="https://make.epfl.ch/projects/12/make-robocup" class="text-accent hover:text-accent-soft transition-colors underline decoration-dotted underline-offset-2">RoboCup@Home competition project at EPFL</a>, led by the <a href="https://www.epfl.ch/labs/create/" class="text-accent hover:text-accent-soft transition-colors underline decoration-dotted underline-offset-2">CREATE Lab</a>.',
       technologies: ['Python', 'ROS2', 'Docker', 'ESC'],
       githubUrl: 'https://gitlab.epfl.ch/create-lab/robocup_at_home/epfl-robocup',
       imageUrl: '/images/robocup.webp'
@@ -58,7 +69,7 @@ export default function Projects() {
       id: '7',
       title: 'Pedestrian Intention Prediction 👁️',
       year: '2023',
-      description: 'Developed a deep learning model based on <a href="https://github.com/Walter0807/MotionBERT" class="text-blue-300 hover:text-blue-200 transition-colors underline decoration-dotted underline-offset-2">MotionBERT</a> to predict pedestrian intentions in videos, trained on the <a href="https://data.nvision2.eecs.yorku.ca/JAAD_dataset/" class="text-blue-300 hover:text-blue-200 transition-colors underline decoration-dotted underline-offset-2">JAAD dataset</a>.',
+      description: 'Developed a deep learning model based on <a href="https://github.com/Walter0807/MotionBERT" class="text-accent hover:text-accent-soft transition-colors underline decoration-dotted underline-offset-2">MotionBERT</a> to predict pedestrian intentions in videos, trained on the <a href="https://data.nvision2.eecs.yorku.ca/JAAD_dataset/" class="text-accent hover:text-accent-soft transition-colors underline decoration-dotted underline-offset-2">JAAD dataset</a>.',
       technologies: ['Python', 'Pytorch', 'BERT'],
       githubUrl: 'https://github.com/DJacquemont/pedestrian-intention-prediction',
       imageUrl: '/images/pedintpred.webp'
@@ -108,7 +119,7 @@ export default function Projects() {
           {projectsList.map((project) => (
             <div 
               key={project.id}
-              className="bg-gray-800 rounded-xl shadow-lg overflow-hidden hover:translate-y-[-5px] transition duration-300 flex flex-col h-full"
+              className="bg-gray-800 rounded-xl shadow-lg overflow-hidden flex flex-col h-full"
             >
               <div className="h-48 w-full relative">
                 <div 
@@ -117,15 +128,13 @@ export default function Projects() {
                     backgroundImage: `url(${project.imageUrl})`,
                     backgroundColor: !project.imageUrl ? '#374151' : 'transparent'
                   }}
-                >
-                  <div className="absolute inset-0 bg-gradient-to-t from-gray-900 to-transparent opacity-70"></div>
-                </div>
+                ></div>
               </div>
               
               <div className="p-5 flex flex-col flex-grow">
-                <div className="flex justify-between items-start mb-2">
+                <div className="flex justify-between items-start gap-3 mb-2">
                   <h2 className="text-xl font-semibold text-white">{project.title}</h2>
-                  <span className="text-gray-400 text-sm">{project.year}</span>
+                  <span className="shrink-0 text-gray-400 text-sm mt-1">{project.year}</span>
                 </div>
                 
                 <p 
@@ -152,36 +161,9 @@ export default function Projects() {
                 </div>
                 
                 <div className="flex flex-wrap gap-2 mt-auto">
-                  {project.githubUrl && (
-                    <a 
-                      href={project.githubUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="px-3 py-1 bg-purple-700 hover:bg-purple-800 rounded-lg text-xs font-medium transition"
-                    >
-                      GitHub
-                    </a>
-                  )}
-                  {project.demoUrl && (
-                    <a 
-                      href={project.demoUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="px-3 py-1 bg-blue-500 hover:bg-blue-600 rounded-lg text-xs font-medium transition"
-                    >
-                      Demo
-                    </a>
-                  )}
-                  {project.arxivUrl && (
-                    <a 
-                      href={project.arxivUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="px-3 py-1 bg-teal-600 hover:bg-teal-700 rounded-lg text-xs font-medium transition"
-                    >
-                      ArXiv
-                    </a>
-                  )}
+                  {project.githubUrl && <ProjectLink href={project.githubUrl} Icon={Github} label="GitHub" />}
+                  {project.demoUrl && <ProjectLink href={project.demoUrl} Icon={PlayCircle} label="Demo" />}
+                  {project.arxivUrl && <ProjectLink href={project.arxivUrl} Icon={FileText} label="Paper" />}
                 </div>
               </div>
             </div>
@@ -189,5 +171,19 @@ export default function Projects() {
         </div>
       </div>
     </div>
+  );
+}
+
+function ProjectLink({ href, Icon, label }) {
+  return (
+    <a
+      href={href}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg border border-gray-600 text-gray-200 text-xs font-medium transition-colors hover:border-accent hover:text-accent"
+    >
+      <Icon className="h-3.5 w-3.5" />
+      {label}
+    </a>
   );
 }

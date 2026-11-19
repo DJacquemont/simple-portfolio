@@ -45,7 +45,7 @@ export default function About() {
       position: "Visiting Student Researcher",
       period: "February 2025 - August 2025",
       location: "Berkeley, US",
-      description: "Developed a novel ground-effect compensation scheme for close-proximity drone flight, integrating multi-control, vision localization, and navigation for autonomous flight. IROS paper: <a href='https://arxiv.org/pdf/2509.10979' class='text-blue-300 hover:text-blue-200 transition-colors underline decoration-dotted underline-offset-2' target='_blank' rel='noopener noreferrer'>Autonomous Close-Proximity Photovoltaic Panel Coating Using a Quadcopter</a>."
+      description: "Developed a novel ground-effect compensation scheme for close-proximity drone flight, integrating multi-control, vision localization, and navigation for autonomous flight. IROS paper: <a href='https://arxiv.org/pdf/2509.10979' class='text-accent hover:text-accent-soft transition-colors underline decoration-dotted underline-offset-2' target='_blank' rel='noopener noreferrer'>Autonomous Close-Proximity Photovoltaic Panel Coating Using a Quadcopter</a>."
     },
     {
       company: "Sevensense Robotics (ABB Robotics)",
@@ -108,14 +108,14 @@ export default function About() {
 
         <div className="bg-gray-800 rounded-xl shadow-lg p-6 mb-8">
           <div className="flex items-center mb-4">
-            <BookOpenIcon className="h-6 w-6 text-blue-300 mr-2" />
+            <BookOpenIcon className="h-6 w-6 text-accent mr-2" />
             <h2 className="text-2xl font-semibold text-white">Education</h2>
           </div>
           <div className="space-y-6">
             {educationData.map((edu, index) => (
-              <div key={index} className="border-l-2 border-blue-400 pl-4 ml-2">
+              <div key={index} className="border-l-2 border-accent/50 pl-4 ml-2">
                 <h3 className="text-xl font-medium text-white">{edu.institution}</h3>
-                <p className="text-blue-200 font-medium">{edu.degree}</p>
+                <p className="text-accent font-medium">{edu.degree}</p>
                 <div className="flex items-center text-gray-400 text-sm mb-2">
                   <span>{edu.period}</span>
                   <span className="mx-2">•</span>
@@ -129,14 +129,14 @@ export default function About() {
 
         <div className="bg-gray-800 rounded-xl shadow-lg p-6 mb-8">
           <div className="flex items-center mb-4">
-            <BriefcaseIcon className="h-6 w-6 text-blue-300 mr-2" />
+            <BriefcaseIcon className="h-6 w-6 text-accent mr-2" />
             <h2 className="text-2xl font-semibold text-white">Experience</h2>
           </div>
           <div className="space-y-6">
             {experienceData.map((exp, index) => (
-              <div key={index} className="border-l-2 border-blue-400 pl-4 ml-2">
+              <div key={index} className="border-l-2 border-accent/50 pl-4 ml-2">
                 <h3 className="text-xl font-medium text-white">{exp.company}</h3>
-                <p className="text-blue-200 font-medium">{exp.position}</p>
+                <p className="text-accent font-medium">{exp.position}</p>
                 <div className="flex items-center text-gray-400 text-sm mb-2">
                   <span>{exp.period}</span>
                   <span className="mx-2">•</span>
@@ -150,7 +150,7 @@ export default function About() {
 
         <div className="bg-gray-800 rounded-xl shadow-lg p-6 mb-8">
           <div className="flex items-center mb-4">
-            <ServerIcon className="h-6 w-6 text-blue-300 mr-2" />
+            <ServerIcon className="h-6 w-6 text-accent mr-2" />
             <h2 className="text-2xl font-semibold text-white">Technical Skills</h2>
           </div>
           
@@ -214,7 +214,7 @@ export default function About() {
         
         <div className="bg-gray-800 rounded-xl shadow-lg p-6 mb-8">
           <div className="flex items-center mb-4">
-            <GlobeIcon className="h-6 w-6 text-blue-300 mr-2" />
+            <GlobeIcon className="h-6 w-6 text-accent mr-2" />
             <h2 className="text-2xl font-semibold text-white">Languages</h2>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
@@ -229,7 +229,7 @@ export default function About() {
         
         <div className="bg-gray-800 rounded-xl shadow-lg p-6">
           <div className="flex items-center mb-4">
-            <CodeIcon className="h-6 w-6 text-blue-300 mr-2" />
+            <CodeIcon className="h-6 w-6 text-accent mr-2" />
             <h2 className="text-2xl font-semibold text-white">Interests & Activities</h2>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">

@@ -7,6 +7,16 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        sans: ['var(--font-inter)', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+      },
+      colors: {
+        // Single accent colour used for links, highlights and active states.
+        accent: {
+          DEFAULT: '#7dd3fc',
+          soft: '#bae6fd',
+        },
+      },
       keyframes: {
         wave: {
           '0%': { transform: 'rotate(0deg)' },
