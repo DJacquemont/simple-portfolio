@@ -6,7 +6,7 @@ export default function Projects() {
       id: '0',
       title: 'Reactive Manipulation Demo on a Neura Arm 🦾',
       year: '2026',
-      description: 'Developed a live demo @ <a href="https://www.epfl.ch/labs/lasa/" class="text-accent hover:text-accent-soft transition-colors underline decoration-dotted underline-offset-2">LASA</a> in which a robot arm throws objects precisely at a target following a kinodynamic trajectory, while avoiding moving obstacles and people in real time. It builds on research by Dr. M. Koptev and Dr. Yang Liu.',
+      description: 'Developed a live demo @ <a href="https://www.epfl.ch/labs/lasa/" class="text-accent hover:text-accent-soft transition-colors underline decoration-dotted underline-offset-2">LASA</a> in which a robot arm throws objects precisely at a target following a kinodynamic trajectory, while avoiding moving obstacles in real time. It builds on research by Dr. Michael Koptev and Dr. Yang Liu.',
       technologies: ['Python', 'C++', 'ROS2', 'MPC'],
       demoUrl: '/videos/neura_demo.mp4',
       imageUrl: '/images/neura_demo.webp'
